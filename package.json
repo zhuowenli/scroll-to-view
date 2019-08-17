@@ -1,0 +1,33 @@
+{
+  "name": "scroll-to-view",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rollup -w -c --environment NODE_ENV:development & http-server ./",
+    "build": "rm -rf dist && rollup -c --environment NODE_ENV:production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuowenli/scroll-to-view.git"
+  },
+  "author": "卓文理",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhuowenli/scroll-to-view/issues"
+  },
+  "homepage": "https://github.com/zhuowenli/scroll-to-view#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "http-server": "^0.11.1",
+    "rollup": "^1.19.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-prettyuglify": "^1.0.1",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-uglify": "^6.0.2",
+    "semantic-ui-css": "^2.4.1"
+  }
+}
