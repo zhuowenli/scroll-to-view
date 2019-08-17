@@ -26,9 +26,9 @@ scrollToView('#header', 300);
 ### Attributes
 | name          | desc             | type      | default | required |
 |-------------  |----------------- |---------- |-------- | -------- |
-| selector      | element selector | string    | —       | required |
-| duration      | animate time     | number    | 300     | —        |
-| callback      | callback function| function  | —       | —        |
+| selector      | element selector | string    | -       | ✔️       |
+| duration      | animate time     | number    | 300     | -        |
+| callback      | callback function| function  | -       | -        |
 
 
 ### Callback
