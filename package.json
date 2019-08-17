@@ -2,12 +2,16 @@
   "name": "scroll-to-view",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/scroll-to-view.js",
+  "module": "dist/scroll-to-view.js",
   "scripts": {
     "dev": "rollup -w -c --environment NODE_ENV:development & http-server ./",
     "build": "rm -rf dist && rollup -c --environment NODE_ENV:production",
-    "deploy": "gh-pages -d ."
+    "npm-publish": "npm run build && npm publish --registry https://registry.npmjs.org"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhuowenli/scroll-to-view.git"
